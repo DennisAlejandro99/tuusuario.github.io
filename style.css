@@ -1,0 +1,89 @@
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #1a1a1a;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    overflow: hidden;
+}
+
+.invitation-card {
+    text-align: center;
+    background-color: #333333;
+    padding: 40px; /* Aumentar el relleno */
+    border-radius: 12px; /* Aumentar el borde redondeado */
+    max-width: 600px; /* Aumentar el ancho máximo */
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.6); /* Incrementar la sombra */
+    position: relative;
+    overflow: hidden;
+    animation: fadeInUp 1s ease forwards;
+}
+
+.circle {
+    background: linear-gradient(135deg, #333333, #1a1a1a);
+    border: 4px solid #d4af37;
+    border-radius: 50%;
+    width: 250px; /* Aumentar tamaño del círculo */
+    height: 250px; /* Aumentar tamaño del círculo */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    color: #d4af37;
+    position: relative;
+    top: -70px;
+    z-index: 1;
+    animation: fadeInUp 1s ease forwards 0.2s;
+}
+
+.circle h1 {
+    font-size: 2em; /* Aumentar tamaño de fuente */
+    margin: 0;
+}
+
+.circle p {
+    font-size: 1.2em; /* Aumentar tamaño de fuente */
+    margin: 5px 0 0 0;
+}
+
+.name {
+    color: #d4af37;
+    font-size: 2.5em; /* Aumentar tamaño del nombre */
+    margin-top: -40px;
+    z-index: 2;
+    position: relative;
+    animation: fadeInUp 1s ease forwards 0.4s;
+}
+
+.message {
+    margin: 30px 0;
+    font-size: 1.3em; /* Aumentar tamaño del mensaje */
+    line-height: 1.6;
+    color: #ffffff;
+    z-index: 2;
+    position: relative;
+    animation: fadeInUp 1s ease forwards 0.6s;
+}
+
+.date {
+    font-size: 1.5em; /* Aumentar tamaño de la fecha */
+    color: #d4af37;
+    z-index: 2;
+    position: relative;
+    animation: fadeInUp 1s ease forwards 0.8s;
+}
